@@ -6,7 +6,7 @@ on:
       [test-branch]
     paths:
     - '**'
-    -".github/workflows/test-deploy-action"
+    - ".github/workflows/test-deploy-action"
   
   workflow_dispatch:
 
