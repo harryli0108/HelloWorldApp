@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "8B54qn5J9joDGbyD+Y+FS+ouGBr1nk35GwIQyR62QnPfKlidHqy6qW7/Hrq5Hcr0uAmJWoNMi2fc3WiNHmXQQg==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\harrli\\bugbash\\HelloWorldApp\\HelloWorldApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\harrli\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\harrli\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\harrli\\.nuget\\packages\\microsoft.extensions.logging\\7.0.0\\microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "C:\\Users\\harrli\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\7.0.0\\microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\harrli\\.nuget\\packages\\microsoft.extensions.options\\7.0.0\\microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "C:\\Users\\harrli\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
