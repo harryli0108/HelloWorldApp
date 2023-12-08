@@ -43,5 +43,5 @@ jobs:
           registryUrl: actiondebugregistry.azurecr.io
           containerAppName: debug-capp
           resourceGroup: PatcherTestRg
-          imageToDeploy: actiondebugregistry.azurecr.io/test:latest
+          imageToDeploy: actiondebugregistry.azurecr.io/test:v3
            
