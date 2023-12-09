@@ -40,8 +40,9 @@ jobs:
         uses: azure/container-apps-deploy-action@e5ee24264226bfb6878b5e062a520b990d664efd
         with:
           appSourcePath: ${{ github.workspace }} 
-          registryUrl: actiondebugregistry.azurecr.io
+          acrName: actiondebugregistry
           containerAppName: debug-capp
           resourceGroup: PatcherTestRg
-          imageToDeploy: actiondebugregistry.azurecr.io/test:v3
-           
+          ingress: external
+          targetPort: 8080
+          imageToBuild: actiondebugregistry.azurecr.io/test:v3
