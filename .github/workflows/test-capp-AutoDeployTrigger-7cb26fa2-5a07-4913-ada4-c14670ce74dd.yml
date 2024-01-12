@@ -32,7 +32,7 @@ jobs:
           subscription-id: ${{ secrets.TESTCAPP_AZURE_SUBSCRIPTION_ID }}
 
       - name: Build and push container image to registry
-        uses: azure/container-apps-deploy-action@v2
+        uses: azure/container-apps-deploy-action@c80a65d59ba11ba91285610c6fbb994551487122
         with:
           appSourcePath: ${{ github.workspace }}/src 
           registryUrl: actiondebugregistry.azurecr.io
@@ -41,7 +41,8 @@ jobs:
           containerAppName: test-capp
           resourceGroup: ca-harrli-group
           imageToBuild: actiondebugregistry.azurecr.io/image/tag:${{ github.sha }}
-          _buildArgumentsKey_: |
-            _buildArgumentsValues_
+          targetPort: 8080
+          environmentVariables: >
+            "TEST_VAR=123"
 
 
