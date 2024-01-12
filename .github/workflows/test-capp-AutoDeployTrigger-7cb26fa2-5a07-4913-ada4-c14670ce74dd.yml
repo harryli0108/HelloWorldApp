@@ -41,6 +41,7 @@ jobs:
           containerAppName: test-capp
           resourceGroup: ca-harrli-group
           imageToBuild: actiondebugregistry.azurecr.io/image/tag:${{ github.sha }}
+          ingress: external
           targetPort: 8080
           environmentVariables: >
             "TEST_VAR=123"
