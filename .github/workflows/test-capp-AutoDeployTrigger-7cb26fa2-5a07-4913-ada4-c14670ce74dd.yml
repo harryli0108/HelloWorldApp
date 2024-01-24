@@ -32,7 +32,7 @@ jobs:
           subscription-id: ${{ secrets.TESTCAPP_AZURE_SUBSCRIPTION_ID }}
 
       - name: Build and push container image to registry
-        uses: azure/container-apps-deploy-action@adeb8626e3fadd676fc989337082ace92824f255
+        uses: azure/container-apps-deploy-action@f13456737888eaa61f4b683edcc4bafc3c9c772b
         with:
           appSourcePath: ${{ github.workspace }}/src 
           registryUrl: harrytest.azurecr.io
