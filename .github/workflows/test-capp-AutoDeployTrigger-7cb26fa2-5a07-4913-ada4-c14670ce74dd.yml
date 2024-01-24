@@ -35,13 +35,11 @@ jobs:
         uses: azure/container-apps-deploy-action@c80a65d59ba11ba91285610c6fbb994551487122
         with:
           appSourcePath: ${{ github.workspace }}/src 
-          acrName: actiondebugregistry
-          containerAppName: debug-capp
+          registryUrl: harrytest.azurecr.io
+          registryUsername: harrytest
+          registryPassword: ${{ secrets.TESTCAPP_AZURE_CONTAINER_REGISTRY_PASSWORD }}
+          containerAppName: test-capp-3
           resourceGroup: PatcherTestRg
-          imageToBuild: actiondebugregistry.azurecr.io/image/tag:${{ github.sha }}
-          ingress: external
-          targetPort: 8080
-          environmentVariables: >
-            "TEST_VAR=123"
+          imageToBuild: harrytest.azurecr.io/image:${{ github.sha }}
 
 
