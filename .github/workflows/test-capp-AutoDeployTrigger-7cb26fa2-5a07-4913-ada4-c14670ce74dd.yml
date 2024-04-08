@@ -37,6 +37,6 @@ jobs:
           appSourcePath: ${{ github.workspace }}/src 
           containerAppName: build-test-app
           resourceGroup: gh-builder-test-rg
-          imageToBuild: default/test-app
+          imageToBuild: default/test-app-image
 
 
